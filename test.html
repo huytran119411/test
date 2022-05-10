@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    bài 1: Câu lệnh là:-->
+<script>
+    alert("tran trong huy")
+</script>
+<!--bài 2: Câu lệnh là:-->
+<script>
+    inputa = parseInt(prompt("nhập số"))
+    a = inputa**2
+    alert(a)
+</script>
+<!--bài 3:-->
+
+<!--<input type="text" id="so1" ></input>-->
+<!--<br></br>-->
+<!--<input type="text" id="so2" ></input>-->
+<!--<br></br>-->
+<!--<button onclick="tinh();">Tính</button>-->
+<!--<h1 id="ketqua"></h1>-->
+<!--<script>-->
+<!--    function tinh() {-->
+<!--        let a = document.getElementById("so1").value;-->
+<!--        let b = document.getElementById("so2").value;-->
+<!--        let S = a*b-->
+<!--        document.getElementById("ketqua").innerHTML="S =" + S-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 4-->
+<!--4A-->
+
+<input type="text" id="canh" ></input>
+<button onclick="tinh1();">Tính</button>
+<p id="4a"></p>
+<br>
+<p id="4a1"></p>
+<script>
+    function tinh1() {
+     let a = document.getElementById("canh").value
+        let P= a*4
+        let S= a*a
+        document.getElementById("4a").innerHTML="P =" + P
+        document.getElementById("4a1").innerHTML="S =" + S
+    }
+</script>
+
+<!--4B-->
+
+<input type="text" id="B1" ></input>
+<input type="text" id="B2" ></input>
+<button onclick="tinh2();">Tính</button>
+<p id="4b"></p>
+<br>
+<p id="4b1"></p>
+<script>
+    function tinh2() {
+        let B1 = document.getElementById("B1").value
+        let B2 = document.getElementById("B2").value
+        let N= Math.pow(B1,2)
+        let M= Math.pow(B1,B2)
+        document.getElementById("4b").innerHTML="A**2 =" + N
+        document.getElementById("4b1").innerHTML="A**B =" + M
+    }
+</script>
+
+
+<!--4E  -->
+
+    <input type="text" id="E1" ></input>
+    <input type="text" id="E2" ></input>
+    <Input type="text" id="E3" ></input>
+<p id="4e"></p>
+<button onclick="tinh3();">Kiểm tra</button>
+<script>
+    function tinh3() {
+        let E1 = document.getElementById("E1").value
+        let E2 = document.getElementById("E2").value
+        let E3 = document.getElementById("E3").value
+        if(E1+E2>E3 && E1+E3>E2 && E2+E3>E2) {
+            document.getElementById("4e").innerHTML="a,b,c là 3 cạnh của 1 tam giác"
+        }
+        // các điều kiện tượng tự cho tam giác cân, đều, vuông
+    }
+</script>
+
+</script>
+</body>
+</html>
